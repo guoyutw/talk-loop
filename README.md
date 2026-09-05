@@ -56,6 +56,25 @@ CHANGELOG.md            — version history
 
 Loop: `real conversation → review how it worked → candidate lesson → accumulate evidence → owner-approved change → CHANGELOG`. See `docs/review-protocol.md` (public rationales are de-identified; raw/private evidence stays private).
 
+## The default loop — lightweight, one agent
+
+For everyday use you don't need a second reviewer or extra tooling:
+
+```
+conversation → same-agent self-review → next conversation improves
+```
+
+The same agent that held the conversation can do an immediate self-review right after: what it missed, where it violated the 4 rules, and one small adjustment for next time. That adjustment lives in the session — it makes the *next* conversation better without changing the shared skill.
+
+## Two levels — don't mix them
+
+- **Level 1 — Personal / session-level:** Your agent's self-review notes, reminders, or prompt tweaks for the next conversation. No approval needed; stays with you.
+- **Level 2 — Shared / public rule:** A change to `SKILL.md`, a mode, or any file in this repo that affects everyone. This requires evidence across conversations and explicit owner approval (see `docs/review-protocol.md`). A self-review can *propose* a candidate, but cannot self-authorize a shared rule.
+
+Self-review is diagnostic, not authoritative. And a conversation can feel good while still violating the rules — review checks adherence separately from outcome.
+
+Iterating is expected. Every material change to the shared skill is committed to Git and noted in `CHANGELOG.md`, so prior states stay inspectable and reversible (`git log`, `git diff`, `git revert`).
+
 ## Origin
 
 Distilled from real talking-head rehearsals (`talk-loop` = `talk` + `loop`). See `CHANGELOG.md` for the v0.1 evidence baseline.
