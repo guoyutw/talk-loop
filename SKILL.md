@@ -2,7 +2,7 @@
 
 ## What this is
 
-Four evidence-backed rules for keeping a conversation on track. They were distilled from real talking-head rehearsals where the partner's job was to help the speaker think out loud — but the rules are written to work beyond YouTube.
+Four evidence-backed rules for keeping a conversation on track — the **conversational behavior layer** inside the Talk Loop workflow. Talk Loop itself is the iterative workflow (`talk → review → retain useful adjustments → reuse`); this file is one execution interface within it, not the product definition. The rules were distilled from real talking-head rehearsals where the partner's job was to help the speaker think out loud — but the rules are written to work beyond YouTube.
 
 ## Core rules (v0.1 — frozen)
 

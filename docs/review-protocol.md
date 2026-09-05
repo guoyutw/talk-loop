@@ -4,18 +4,33 @@ How `talk-loop` changes without silent self-rewrite.
 
 ## Loop
 
+Talk Loop is the full iterative method:
+
 ```
-real conversation  →  review how it worked  →  candidate lesson
-→  accumulate / assess evidence  →  owner-approved rule change  →  version + CHANGELOG
+conversation → post-conversation review → identify effective / ineffective interaction → keep useful adjustments → carry them into the next conversation
 ```
 
-The review evaluates **how the conversation worked** (threading, concrete vs abstract, follow-through), not merely what was discussed.
+Shared-rule evolution runs on top of that as:
+
+```
+candidate lesson → accumulate / assess evidence → owner-approved rule change → version + CHANGELOG
+```
+
+The review evaluates **how the conversation worked** (threading, concrete vs abstract, follow-through), not merely what was discussed. `SKILL.md` is the conversational behavior layer; this document is the review and evolution layer; persistence (below) is what connects one session to the next.
 
 ## Evidence
 
 - A candidate lesson must cite real-conversation evidence to be considered (generalized description, not raw transcript).
 - Raw transcripts, private session content, identifying details, and personal profiles stay private and are never published.
 - Public rationales in `CHANGELOG.md` are de-identified and generalized.
+
+## Persistence boundary
+
+Talk Loop defines *what* to keep (the useful adjustment from review); the host determines *how* it persists.
+
+- **Without persistence:** `conversation + review` still works inside a session, but cross-session improvement cannot be honestly claimed.
+- **With persistence:** the kept adjustment is carried into the next conversation via the host — e.g., ChatGPT Memory, custom instructions, manually saved notes/rules, or an external durable-state system (Hermes is one dogfood example, not a requirement).
+- Talk Loop does not build a persistence engine, sync layer, or backend, and does not claim learning across sessions where the host provides none.
 
 ## Promotion rule
 
@@ -28,8 +43,9 @@ No rule is promoted by the model acting alone. No silent self-modification.
 
 ## What this protocol does not do
 
-- Does not create automation, cron, database, or a self-updater. The loop is manual and owner-gated.
+- Does not create automation, cron, database, sync layer, or a persistence engine. The loop is manual and owner-gated; persistence is host-dependent (see above).
 - Does not claim therapy, medical, or clinically validated counseling.
+- Does not claim cross-session learning where the host provides no persistence.
 
 ## Everyday use — one-agent self-review (default)
 
@@ -70,7 +86,8 @@ Iteration is expected. Every material change to the shared skill is committed to
 
 ## Roles
 
-- **Model (same-agent reviewer by default)**: holds the conversation, then diagnoses misses and proposes evidence/candidates.
+- **Model (same-agent reviewer by default)**: holds the conversation, reviews it, and identifies what to keep for next time.
+- **Host / environment**: determines how kept adjustments persist to the next session (Memory, instructions, notes, or external state).
 - **Optional independent reviewer**: used as escalation when judging promotion of a shared rule, not for every conversation.
 - **Owner**: decides whether evidence is sufficient and approves any shared/public change.
 
