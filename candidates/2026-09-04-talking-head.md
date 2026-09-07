@@ -3,7 +3,7 @@
 > Status: **accumulating evidence** — not core, not mode, not promoted.
 > Follows `docs/review-protocol.md`: candidate lessons noted from real conversation, generalized and de-identified, raw/private evidence stays private. Promotion requires additional evidence and explicit owner approval.
 
-Source session: 2026-09-04 talking-head dogfood (generalized). No raw transcript is published here.
+Source sessions: 2026-09-04 talking-head dogfood and a later follow-up dogfood session (generalized). No raw transcript is published here.
 
 ---
 
@@ -15,15 +15,7 @@ Source session: 2026-09-04 talking-head dogfood (generalized). No raw transcript
 
 **Status:** `accumulating evidence` — observed across two sessions, not yet sufficient for promotion to core or mode. Awaiting additional sessions per `docs/review-protocol.md`.
 
-## 2. Preserve established context when entering talking-head rehearsal
-
-**Candidate:** When an interaction already has a clear topic or context, entering talking-head rehearsal should continue from that established conversational context rather than using a blank-slate opener that resets the thread.
-
-**Generalized evidence:** In a real dogfood session, the speaker had already provided a clear topic and relevant research material before rehearsal began. The partner then used a generic opener that invited a new topic, and the speaker immediately indicated that the expected behavior was to continue the existing thread. Once the conversation returned to the established topic, the exchange recovered.
-
-**Status:** `accumulating evidence` — observed in one session, not yet sufficient for promotion to core or mode. Accumulate across sessions before owner-approved change.
-
-## 3. Do not solve too early while a concrete event is still unfolding
+## 2. Do not solve too early while a concrete event is still unfolding
 
 **Candidate:** When the speaker surfaces a concrete event or example, switching into advice, frameworks, or solutions can interrupt the story thread. Prefer continuing curiosity/follow-up before moving into solution mode.
 
