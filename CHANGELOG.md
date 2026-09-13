@@ -2,6 +2,19 @@
 
 All notable changes to `talk-loop` will be documented here. The model does not update this file on its own; every entry is owner-approved.
 
+## [0.4.0] — 2026-09-13
+
+Owner-approved material change via Issue #40.
+
+### Added
+
+- **Participant memory handoff** — `docs/participant-memory-handoff.md` + `modes/guided-conversation.md` wiring for `guided-conversation`. ChatGPT Live-first: named participant → `PARTICIPANT_LOOKUP` → Hermes local-only lookup → `PARTICIPANT_CONTEXT` / `NEW_PARTICIPANT` before conversation; review reliably emits `PARTICIPANT_MEMORY_DELTA` or `NO_WRITE`; valid deltas write directly to local-only participant cards (minimum useful context / open threads, no full transcript, sensitive excluded by default, outside Git/OneDrive/public talk-loop, manual transport, no daemon/RAG). Defensive `.gitignore` added.
+
+### Unchanged
+
+- **Core (4 rules)** — frozen v0.1 core in `SKILL.md` unchanged.
+- **Existing flows** — `post-from-talk` and other modes unchanged; handoff is additional, not a redesign.
+
 ## [0.3.0] — 2026-09-13
 
 Owner-approved material change via Issue #38.

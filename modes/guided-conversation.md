@@ -58,11 +58,13 @@ Core rules 1–4 remain in force and are the base layer. This mode only adds the
 
 Both modes layer on the same core; use one at a time.
 
-## Participant memory handoff (optional)
+## Participant memory handoff
 
-For repeated conversations, use `docs/participant-memory-handoff.md`:
+When a participant is named in `guided-conversation`, the handoff is **automatic, not optional**:
 
-- ChatGPT Live emits `PARTICIPANT_LOOKUP` first; Hermes returns `PARTICIPANT_CONTEXT` or `NEW_PARTICIPANT` from **local-only** memory (outside Git/OneDrive).
-- At review, ChatGPT emits `PARTICIPANT_MEMORY_DELTA` or `NO_WRITE`; Hermes writes the local card directly (minimum useful context / open threads, no full transcript, sensitive excluded by default).
+- At the start, ChatGPT Live **first emits** `PARTICIPANT_LOOKUP` for each named participant; Hermes returns `PARTICIPANT_CONTEXT` or `NEW_PARTICIPANT` from **local-only** memory (outside Git/OneDrive) before the conversation proceeds.
+- At review/closeout, ChatGPT **reliably emits exactly one** `PARTICIPANT_MEMORY_DELTA` or `NO_WRITE` so the owner does not need to remember whether to save.
+
+See `docs/participant-memory-handoff.md` for the exact shapes. Hermes writes a valid delta directly (minimum useful context / open threads, no full transcript, sensitive excluded by default).
 
 Real participant records never live in public `talk-loop`.
