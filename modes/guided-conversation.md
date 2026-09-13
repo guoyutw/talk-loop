@@ -57,3 +57,12 @@ Core rules 1–4 remain in force and are the base layer. This mode only adds the
 - `guided-conversation` — helps **two** humans talk to each other with the AI navigating.
 
 Both modes layer on the same core; use one at a time.
+
+## Participant memory handoff (optional)
+
+For repeated conversations, use `docs/participant-memory-handoff.md`:
+
+- ChatGPT Live emits `PARTICIPANT_LOOKUP` first; Hermes returns `PARTICIPANT_CONTEXT` or `NEW_PARTICIPANT` from **local-only** memory (outside Git/OneDrive).
+- At review, ChatGPT emits `PARTICIPANT_MEMORY_DELTA` or `NO_WRITE`; Hermes writes the local card directly (minimum useful context / open threads, no full transcript, sensitive excluded by default).
+
+Real participant records never live in public `talk-loop`.

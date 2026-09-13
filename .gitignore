@@ -1,0 +1,25 @@
+# Talk Loop — local participant stores, private transcripts, env
+
+# Real participant data must stay local-only (outside Git / OneDrive / public talk-loop)
+participants/
+participant-memory/
+local-participants/
+**/participant-memory/
+**/*.participant.json
+**/participants.json
+
+# Private / local-only human data
+private/
+local-private/
+**/private-transcript*.md
+**/*transcript*.txt
+
+# Env / secrets
+.env
+.env.*
+*.env
+credentials.json
+**/credentials/*.json
+
+# Hermes host local (if ever mirrored here, keep out)
+_internal/runtime/credentials/
