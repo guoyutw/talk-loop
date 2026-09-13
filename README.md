@@ -21,8 +21,9 @@ conversation → post-conversation review → identify effective / ineffective i
 1. **Load the core** — Give your conversational agent `SKILL.md` as its interaction policy (one interface inside the workflow).
 2. **Add the mode if needed** — Rehearsing talking-head video? Also add `modes/talking-head.md`. Two humans + AI navigation? Also add `modes/guided-conversation.md`.
 3. **Have a real conversation** — Talk about a real topic; the agent follows the 4 rules.
-4. **Review right after** — Use `docs/review-protocol.md` for a lightweight same-agent self-review: what worked, what was missed, what to keep.
-5. **Keep what was useful** — Carry the useful adjustment into the next conversation via whatever persistence your host provides (see Persistence below).
+4. **Turn it into a post (optional)** — After useful material emerged, use `flows/post-from-talk.md` to turn what you actually said into a Threads post — bounded edit only, your voice stays.
+5. **Review right after** — Use `docs/review-protocol.md` for a lightweight same-agent self-review: what worked, what was missed, what to keep (may include the post output).
+6. **Keep what was useful** — Carry the useful adjustment into the next conversation via whatever persistence your host provides (see Persistence below).
 
 ### First dogfood example: ChatGPT Live
 
@@ -37,6 +38,14 @@ Not ChatGPT-only: the same core can be used with any conversational agent that l
 - **Before (scatters the thread):** "Got it! What was the product? What was the business model? What did you learn? What would you do differently?" — four questions at once; speaker has to choose.
 - **After (one thread, follows the heat):** "Who was the first real person who pushed back on it — what did they actually say?" — one question, picks the concrete detail, keeps the thread.
 
+### Speech-first post — what you said → Threads (bounded edit)
+
+*You spoke it; the AI organizes it — no new hooks/insights invented.*
+
+- **Allowed:** select / delete / reorder / light smooth / punctuate / Threads line breaks — your wording stays traceable.
+- **Not allowed:** new arguments, punchlines, CTA, or social-copy framing you didn't express; generic "humanized" style over your voice.
+- **Flow:** `flows/post-from-talk.md` — optional after either mode; review `docs/review-protocol.md` can cover the post (“I would not say this” → evidence/candidate).
+
 ---
 
 ## What it is / is not
@@ -47,6 +56,7 @@ Not ChatGPT-only: the same core can be used with any conversational agent that l
 - **Core:** 4 evidence-backed conversational rules (in `SKILL.md`) that work beyond YouTube.
 - **Mode:** `talking-head` — the current dogfood use case.
 - **Mode:** `guided-conversation` — two humans + AI navigation (MVP).
+- **Output flow:** `post-from-talk` — speech-first Threads post from what you actually said (bounded edit, not a mode).
 
 Loading `SKILL.md` alone is not the full Talk Loop — it is one layer inside the workflow.
 
@@ -65,6 +75,7 @@ LICENSE                 — MIT
 SKILL.md                — 4 core rules (conversational behavior layer — one interface inside the workflow)
 modes/talking-head.md   — dogfood mode, separated from core
 modes/guided-conversation.md — two humans + AI navigation (MVP)
+flows/post-from-talk.md — speech-first Threads output flow (bounded edit, not a mode)
 docs/review-protocol.md — review, persistence, and shared-rule evolution
 CHANGELOG.md            — version history
 ```

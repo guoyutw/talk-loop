@@ -2,6 +2,19 @@
 
 All notable changes to `talk-loop` will be documented here. The model does not update this file on its own; every entry is owner-approved.
 
+## [0.3.0] — 2026-09-13
+
+Owner-approved material change via Issue #38.
+
+### Added
+
+- **Output flow** — `flows/post-from-talk.md` — speech-first Threads output flow (not a mode). After useful material has emerged (usable after `talking-head` or `guided-conversation` where applicable), organizes what the owner actually said into a publishable Threads post. Source of truth is the owner's actual spoken meaning/wording; allows only bounded editorial operations (select, delete, reorder, light smoothing, punctuation, Threads-friendly line breaks). Forbids inventing new arguments, hooks, punchlines, insights, CTA, or social-copy framing; preserves owner's voice rather than optimizing for generic humanized style. Reuses existing `docs/review-protocol.md` loop — review may evaluate conversation and post output, feedback like "I would not say this" can become evidence/candidates; no speculative promotion.
+
+### Unchanged
+
+- **Core (4 rules)** — frozen v0.1 core in `SKILL.md` unchanged.
+- **Modes** — `talking-head` and `guided-conversation` unchanged; `post-from-talk` is an output flow, not a third interaction mode.
+
 ## [0.2.0] — 2026-09-13
 
 Owner-approved material change via Issue #37.
