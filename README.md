@@ -19,7 +19,7 @@ conversation → post-conversation review → identify effective / ineffective i
 `README.md` is for **you** (how to start). `SKILL.md` is the **agent behavior contract** (what the agent does).
 
 1. **Load the core** — Give your conversational agent `SKILL.md` as its interaction policy (one interface inside the workflow).
-2. **Add the mode if needed** — Rehearsing talking-head video? Also add `modes/talking-head.md`.
+2. **Add the mode if needed** — Rehearsing talking-head video? Also add `modes/talking-head.md`. Two humans + AI navigation? Also add `modes/guided-conversation.md`.
 3. **Have a real conversation** — Talk about a real topic; the agent follows the 4 rules.
 4. **Review right after** — Use `docs/review-protocol.md` for a lightweight same-agent self-review: what worked, what was missed, what to keep.
 5. **Keep what was useful** — Carry the useful adjustment into the next conversation via whatever persistence your host provides (see Persistence below).
@@ -46,6 +46,7 @@ Not ChatGPT-only: the same core can be used with any conversational agent that l
 - **Workflow:** `talk → review → retain useful adjustments → reuse next time` — the loop itself is the product.
 - **Core:** 4 evidence-backed conversational rules (in `SKILL.md`) that work beyond YouTube.
 - **Mode:** `talking-head` — the current dogfood use case.
+- **Mode:** `guided-conversation` — two humans + AI navigation (MVP).
 
 Loading `SKILL.md` alone is not the full Talk Loop — it is one layer inside the workflow.
 
@@ -63,6 +64,7 @@ README.md               — you are here: workflow + how to start
 LICENSE                 — MIT
 SKILL.md                — 4 core rules (conversational behavior layer — one interface inside the workflow)
 modes/talking-head.md   — dogfood mode, separated from core
+modes/guided-conversation.md — two humans + AI navigation (MVP)
 docs/review-protocol.md — review, persistence, and shared-rule evolution
 CHANGELOG.md            — version history
 ```

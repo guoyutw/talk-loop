@@ -50,4 +50,5 @@ Candidates such as adaptive intervention strength, `有路線沒台詞` / route-
 
 - Default conversational mode: apply rules 1–4.
 - Talking-head rehearsal: add `modes/talking-head.md` on top of this file.
+- Two humans + AI navigation: add `modes/guided-conversation.md` on top of this file.
 - Do not add personal memory/profile content here; keep that in a private layer.
