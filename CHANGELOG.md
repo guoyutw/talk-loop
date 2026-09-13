@@ -2,6 +2,18 @@
 
 All notable changes to `talk-loop` will be documented here. The model does not update this file on its own; every entry is owner-approved.
 
+## [0.2.0] — 2026-09-13
+
+Owner-approved material change via Issue #37.
+
+### Added
+
+- **Mode** — `modes/guided-conversation.md` — two humans + AI navigation (MVP). A live three-party shape where the AI acts as a conversation navigator (not primary host), may directly follow up with either human on a useful concrete thread, supports lightweight optional pre-conversation context without a required question list, and offers a single easy recallable foothold when the conversation stalls. Layers on the frozen 4 core rules; `follow the heat` remains in force. `talking-head` remains distinct (one main speaker thinking aloud vs two humans in conversation). Future refinements remain evidence-driven via `docs/review-protocol.md`.
+
+### Unchanged
+
+- **Core (4 rules)** — frozen v0.1 core in `SKILL.md` unchanged.
+
 ## [0.1.0] — 2026-09-04
 
 Initial public release. Minimal, understandable, evidence-driven.
