@@ -13,7 +13,9 @@ Source session: 2026-09-08 talking-head dogfood (generalized). No raw transcript
 
 **Generalized evidence:** In a talking-head session, a mid-session review identified a specific conversational adjustment. The next fitting turn provided an opportunity to test it; applying the adjustment in that turn was more informative than repeating the diagnosis without changing the interaction.
 
-**Status:** `accumulating evidence` — observed in one session, not yet sufficient for promotion. Accumulate across sessions before owner-approved change.
+**Additional generalized evidence (2026-09-14 session, de-identified):** In a subsequent talking-head session where the same adjustment was under validation, turns where the adjustment was actually executed showed the conversational thread extending further; turns where execution was not sustained showed the conversation fragmenting again. Pattern observed within a single session; no raw transcript or private content disclosed.
+
+**Status:** `accumulating evidence` — observed across sessions (2026-09-08 + 2026-09-14), not yet sufficient for promotion. Accumulate across sessions before owner-approved change.
 
 ---
 
