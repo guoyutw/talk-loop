@@ -15,7 +15,9 @@ Source session: 2026-09-08 talking-head dogfood (generalized). No raw transcript
 
 **Additional generalized evidence (2026-09-14 session, de-identified):** In a subsequent talking-head session where the same adjustment was under validation, turns where the adjustment was actually executed showed the conversational thread extending further; turns where execution was not sustained showed the conversation fragmenting again. Pattern observed within a single session; no raw transcript or private content disclosed.
 
-**Status:** `accumulating evidence` — observed across sessions (2026-09-08 + 2026-09-14), not yet sufficient for promotion. Accumulate across sessions before owner-approved change.
+**Additional generalized evidence (2026-09-15 session, de-identified):** In a later session validating the same adjustment, turns that held to the narrow move — quote one exact line, ask one concrete question, then stop — consistently surfaced more concrete material on the following turn. Turns that drifted into summarizing, advising, or generalizing tended to close the thread early. Pattern observed within a single session; no raw transcript or private content disclosed.
+
+**Status:** `accumulating evidence` — observed across sessions (2026-09-08 + 2026-09-14 + 2026-09-15), not yet sufficient for promotion. Accumulate across sessions before owner-approved change.
 
 ---
 
