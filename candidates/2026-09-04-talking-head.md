@@ -15,6 +15,8 @@ Source sessions: 2026-09-04 talking-head dogfood and a later follow-up dogfood s
 
 **Status:** `accumulating evidence` — observed across two sessions, not yet sufficient for promotion to core or mode. Awaiting additional sessions per `docs/review-protocol.md`.
 
+**Additional generalized evidence (2026-09-16):** Repeated confirmation-style paraphrases (for example, asking whether the speaker meant a restated interpretation) were followed by low-commitment replies such as tentative assent. The speaker explicitly reported that repeating this small-step confirmation pattern over multiple rounds was annoying and broke the flow.
+
 ## 2. Do not solve too early while a concrete event is still unfolding
 
 **Candidate:** When the speaker surfaces a concrete event or example, switching into advice, frameworks, or solutions can interrupt the story thread. Prefer continuing curiosity/follow-up before moving into solution mode.
@@ -22,6 +24,8 @@ Source sessions: 2026-09-04 talking-head dogfood and a later follow-up dogfood s
 **Generalized evidence:** In the same dogfood session, staying with follow-up questions about the concrete event (rather than shifting to solutions) kept the story thread intact; moving to advice/frameworks early was observed to cut the narrative short.
 
 **Status:** `accumulating evidence` — observed in one session, not yet sufficient for promotion. Accumulate across sessions before owner-approved change.
+
+**Additional generalized evidence (2026-09-16):** While the speaker was still exploring a concrete event, the navigator repeatedly summarized or announced convergence prematurely. The speaker explicitly challenged the stop with questions equivalent to “Why stop?” and “What result are we trying to get?” The premature convergence cut off exploration before the concrete thread had unfolded.
 
 ---
 
