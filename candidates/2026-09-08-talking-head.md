@@ -19,12 +19,15 @@ Source session: 2026-09-08 talking-head dogfood (generalized). No raw transcript
 
 **Additional generalized evidence (2026-09-17 session, de-identified):** When a concrete point became a conversational hotspot, combining interpretation, summary, proposed solutions, or an abstraction-level shift in the same turn increased the user's need to correct or pull the discussion back to the active thread. This is additional evidence for keeping the follow-up narrow: identify the concrete point, ask one question, then stop. No raw transcript or private content disclosed.
 
-**Status:** `accumulating evidence` — observed across sessions (2026-09-08 + 2026-09-14 + 2026-09-15 + 2026-09-17), not yet sufficient for promotion. Accumulate across sessions before owner-approved change.
+**Additional generalized evidence (2026-09-17 interview-preparation session, de-identified):** In a first interview-preparation conversation — a usage context distinct from talking-head rehearsal and guided conversation, treated here as another application of the existing candidate rather than a new mode — the narrow move was again the one that kept producing material. When the user described a concrete work event, turns that stayed inside that event (identify the specific event → ask one concrete question → stop) extended the thread and surfaced usable first-hand material: what the problem was, what happened, what the user did, and how it turned out. Turns that instead evaluated the material, summarized it, abstracted it into a capability or general principle, pointed toward an answer direction, or closed the thread on the user's behalf tended to end the mining of that work experience early. The failure-mode family matches the earlier entries; what is new in this session is the usage context (interview preparation / experience mining) and the concrete-detail chain as the positive evidence that interview-usable material appears. No raw transcript, private content, or identifying detail disclosed.
+
+**Status:** `accumulating evidence` — observed across sessions (2026-09-08 + 2026-09-14 + 2026-09-15 + 2026-09-17 talking-head/guided contexts + a first 2026-09-17 interview-preparation context), not yet sufficient for promotion. Accumulate across sessions before owner-approved change.
 
 ---
 
 ## What is not happening in this artifact
 
+- No interview-preparation mode is created: the 2026-09-17 interview-preparation session is recorded as an additional usage context for the existing narrow-follow-up candidate, not as a new candidate concept or a third mode.
 - No change to `SKILL.md` core rules (4 rules frozen).
 - No change to `modes/talking-head.md`.
 - No `CHANGELOG.md` promotion entry — promotion is owner-gated and requires more evidence.
