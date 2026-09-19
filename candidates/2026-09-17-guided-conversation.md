@@ -27,6 +27,14 @@ Source session: 2026-09-17 guided-conversation review (generalized). No raw tran
 
 ---
 
+## 3. Spoken-approved post is the source of truth for bounded formatting
+
+**Candidate:** In post-from-talk, once the owner explicitly accepts a spoken/read-aloud version as sounding right, lock that version as the source of truth and restrict later text work to formatting/light cleanup unless the owner explicitly requests a new rewrite.
+
+**Generalized evidence (2026-09-19):** In a post-from-talk dogfood session, the owner first evaluated a draft by listening to it spoken aloud and explicitly accepted how it sounded. A later text-generation step rewrote the content again, causing drift from the version the owner had actually approved. The useful adjustment is to preserve the spoken-approved version and treat layout as formatting, not a second creative pass.
+
+**Status:** `accumulating evidence` — one additional generalized observation, not sufficient for promotion to core, mode, or canonical post-from-talk semantics. Further evidence and explicit owner approval would be required.
+
 ## What is not happening in this artifact
 
 - No change to `SKILL.md` core rules (4 rules frozen).
