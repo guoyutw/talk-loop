@@ -33,7 +33,9 @@ Source session: 2026-09-17 guided-conversation review (generalized). No raw tran
 
 **Generalized evidence (2026-09-19):** In a post-from-talk dogfood session, the owner first evaluated a draft by listening to it spoken aloud and explicitly accepted how it sounded. A later text-generation step rewrote the content again, causing drift from the version the owner had actually approved. The useful adjustment is to preserve the spoken-approved version and treat layout as formatting, not a second creative pass.
 
-**Status:** `accumulating evidence` — one additional generalized observation, not sufficient for promotion to core, mode, or canonical post-from-talk semantics. Further evidence and explicit owner approval would be required.
+**Additional generalized evidence (2026-09-24, de-identified):** In a post-from-talk dogfood session, the first AI draft stayed broadly faithful to the meaning but was rejected as sounding AI-written because it made the speech too complete, orderly, and formally punctuated. A later version that retained more of the owner's loose spoken rhythm, less uniform punctuation, less article-like line structure, and less sentence completeness was closer to the owner's voice; the owner then made the final small edits and published it. This supports a concrete failure mode within voice preservation: bounded editing can still drift by over-normalizing punctuation, line breaks, sentence completeness, and spoken pacing. An actual owner-published final output exists as evidence for this review; its raw text is not reproduced here.
+
+**Status:** `accumulating evidence` — two additional generalized observations (2026-09-19 and 2026-09-24), not sufficient for promotion to core, mode, or canonical post-from-talk semantics. Further evidence and explicit owner approval would be required.
 
 ## What is not happening in this artifact
 
