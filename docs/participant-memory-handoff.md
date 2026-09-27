@@ -4,7 +4,7 @@
 
 ## When this applies
 
-When `modes/guided-conversation.md` is in use and a participant is named. ChatGPT Live is the conversation surface; it does **not** have local memory access.
+When `modes/guided-conversation.md` is in use and a participant is named. ChatGPT Live is the conversation surface; it does not have local memory access. The stable Talk Loop authorities for this flow are `https://github.com/guoyutw/talk-loop/blob/main/SKILL.md`, `https://github.com/guoyutw/talk-loop/blob/main/modes/guided-conversation.md`, and this file at `https://github.com/guoyutw/talk-loop/blob/main/docs/participant-memory-handoff.md`. Use these locators directly; do not rediscover the workflow through broad local or filesystem search.
 
 ## Handoff 1 — `PARTICIPANT_LOOKUP` (start)
 
@@ -16,12 +16,12 @@ PARTICIPANT_LOOKUP: {"participant": "王小明"}
 
 - One participant per lookup. If two participants, emit two lookups.
 - Use the display name as spoken. No ID creation here.
-- The user copies this block to Hermes. Hermes resolves it against **local-only participant memory** (outside repos) and returns either:
+- When the direct ChatGPT → OpenChatX → Hermes bridge is available, dispatch this lookup directly to Hermes. Otherwise, the owner copies this block to Hermes as the manual fallback. Hermes resolves it against **local-only participant memory** (outside repos) and returns either:
 
   - `PARTICIPANT_CONTEXT` — concise context for the next conversation, or
   - `NEW_PARTICIPANT` — clean "no prior context" result
 
-  The user pastes that result back into ChatGPT Live before the conversation proceeds.
+  Return the result to ChatGPT through the bridge when available; otherwise the owner pastes it back into ChatGPT Live before the conversation proceeds.
 
 Neither `PARTICIPANT_LOOKUP` nor the returned context invents personal data. If Hermes returns `NEW_PARTICIPANT`, ChatGPT treats them as new.
 
@@ -56,7 +56,7 @@ PARTICIPANT_MEMORY_DELTA: {"participant": "王小明", "context": "對澳洲故�
 ```
 
 - `context`/`open_threads` follow the same minimum-useful rule. No full transcript, no sensitive data by default.
-- The user copies this block to Hermes. Hermes writes the local participant card **directly without a second confirmation** (if the delta is valid).
+- When the direct bridge is available, dispatch this delta directly to Hermes. Otherwise, the owner copies this block to Hermes as the manual fallback. Hermes writes the local participant card **directly without a second confirmation** (if the delta is valid).
 
 **B) Nothing worth saving:**
 
@@ -66,9 +66,11 @@ NO_WRITE: {"participant": "王小明", "reason": "no new open thread worth carry
 
 Hermes does nothing for `NO_WRITE` except optionally acknowledge.
 
-## Manual transport (no daemon)
+## Transport preference
 
-The flow is intentionally manual — no daemon, webhook, background sync, API bridge, or automatic ChatGPT↔Hermes transport:
+When available, the preferred path is direct ChatGPT → OpenChatX → Hermes dispatch. OpenChatX is transport/access to Hermes, not a participant-memory authority. Manual handoff remains the fallback when the bridge is unavailable and remains an explicit owner override.
+
+### Manual fallback / explicit owner override
 
 ```
 ChatGPT Live → PARTICIPANT_LOOKUP → (user copies) → Hermes local lookup → (user copies back) → ChatGPT Live
@@ -76,7 +78,7 @@ ChatGPT Live → PARTICIPANT_LOOKUP → (user copies) → Hermes local lookup �
 ChatGPT → PARTICIPANT_MEMORY_DELTA / NO_WRITE → (user copies) → Hermes local write
 ```
 
-The Generic protocol does not require a specific local filesystem path; the Hermes host chooses the smallest safe implementation from current authority (local-only outside Git/OneDrive).
+The manual path is not required when direct dispatch is available. The generic protocol does not require a specific local filesystem path; the Hermes host chooses the smallest safe implementation from current authority (local-only outside Git/OneDrive).
 
 ## What is not persisted
 

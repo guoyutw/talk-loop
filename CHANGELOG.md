@@ -2,6 +2,20 @@
 
 All notable changes to `talk-loop` will be documented here. The model does not update this file on its own; every entry is owner-approved.
 
+## [0.5.0] — 2026-09-27
+
+Owner-authorized bounded transport modernization via Issue #65.
+
+### Changed
+
+- **Participant handoff transport** — direct ChatGPT → OpenChatX → Hermes dispatch is preferred when available; manual copy/paste remains the fallback and explicit owner override. The named-participant lookup gate, handoff shapes, participant-memory semantics, and local-only privacy boundary are unchanged.
+- **Authority locators** — stable GitHub paths for `SKILL.md`, `modes/guided-conversation.md`, and `docs/participant-memory-handoff.md` are explicit so cold start does not require broad/local workflow discovery.
+
+### Unchanged
+
+- **Core (4 rules)** — frozen v0.1 core in `SKILL.md` unchanged.
+- **Guided conversation** — two-humans + AI semantics remain unchanged; this update only changes participant-handoff transport preference.
+
 ## [0.4.0] — 2026-09-13
 
 Owner-approved material change via Issue #40.

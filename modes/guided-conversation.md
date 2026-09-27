@@ -60,6 +60,8 @@ Both modes layer on the same core; use one at a time.
 
 ## Participant memory handoff
 
+Stable authority locators for this mode are `https://github.com/guoyutw/talk-loop/blob/main/SKILL.md`, this file at `https://github.com/guoyutw/talk-loop/blob/main/modes/guided-conversation.md`, and `https://github.com/guoyutw/talk-loop/blob/main/docs/participant-memory-handoff.md`. Use these locators directly; do not broad-search the local filesystem for Talk Loop instructions.
+
 When a participant is named in `guided-conversation`, the handoff is **automatic, not optional**:
 
 - At the start, ChatGPT Live **first emits** `PARTICIPANT_LOOKUP` for each named participant; Hermes returns `PARTICIPANT_CONTEXT` or `NEW_PARTICIPANT` from **local-only** memory (outside Git/OneDrive) before the conversation proceeds.
